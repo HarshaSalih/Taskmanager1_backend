@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 
 public class Tasks {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
 
     @Column(name = "id")
     private int id;
@@ -27,6 +27,7 @@ public class Tasks {
     @Column(name = "status")
     private String status;
 
-
+    @Column(name = "uid")
+    private int uid;
 }
 
