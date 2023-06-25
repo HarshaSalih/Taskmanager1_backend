@@ -27,6 +27,7 @@ public class Tasks {
     @Column(name = "status")
     private String status;
 
-
+    @Column(name = "uid")
+    private int uid;
 }
 

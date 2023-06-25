@@ -23,8 +23,6 @@ public class UserController {
         Users savedUser = userRepository.save(users);
         return ResponseEntity.ok(savedUser);
     }
-
-
     @PostMapping("/login")
     public ResponseEntity<?> loginUser(@RequestBody Users users) {
         Users storedUser = userRepository.findByEmail(users.getEmail());
